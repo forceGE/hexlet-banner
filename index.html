@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./vendor/index.css">
+    <title>Test task</title>
+</head>
+
+<body class="body">
+    <main class="content">
+        <img class="content__img-bag" src="./vendor/image/School_Bag.svg" alt="School_Bag_image">
+        <div class="paragraph-block">
+            <diV class="paragraph-block__item paragraph-block__item-size">
+                <h3 class="title content__title">Мы&nbsp;знаем, как закончить школу за&nbsp;<span
+                        class="font-color">10&nbsp;месяцев!</span></h3>
+                <p class="sub-title content__sub-title">А&nbsp;потом устроиться на&nbsp;любимую работу</p>
+            </diV>
+        </diV>
+        <img class="content__img-arrow" src="./vendor/image/arrows_1.svg" alt="arrows_image">
+        </div>
+        <div class="paragraph-block">
+            <diV class="paragraph-block__item">
+                <p class="sub-title content__sub-title">Хотите также? Приходите учиться в&nbsp;Хекслет!</p>
+                <h3 class="title content__title"><span class="font-color">До&nbsp;1&nbsp;сентября</span> оставьте заявку
+                    на&nbsp;любую профессию,<br>
+                    а&nbsp;мы&nbsp;подарим классные <span class="font-color">бонусы</span> для воодушевляющего старта
+                </h3>
+            </diV>
+        </diV>
+        <img class="content__img-arrow-second" src="./vendor/image/arrows_2.svg" alt="arrows_image">
+        </div>
+        <button type="button" class="btn btn-primary btn-sm content__button" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">А что подарите?</button>
+        <img class="content__img-computer" src="./vendor/image/computer_1.svg" alt="computer_image">
+    </main>
+    <!-- Модальное окно -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog popup-container">
+            <div class="modal-content  popup-container__bkg">
+                <button type="button" class="btn-close button-close" data-bs-dismiss="modal"
+                    aria-label="Закрыть"></button>
+                <div class="modal-body popup">
+                    <div class="popup-content">
+                        <h5 class="title font-color popup-content__title">Хочу стать разработчиком!</h5>
+                        <p class="sub-title popup-content__sub-title">И&nbsp;получить один из&nbsp;трех подарков</p>
+                        <div class="popup-content__item">
+                            <img class="popup-content__img" src="./vendor/image/revenue_rub.svg" alt="popup image">
+                            <p class="sub-title"><strong>Именной депозит на&nbsp;20к.</strong> Будет доступен после
+                                покупки профессии,
+                                им&nbsp;можно оплачивать дальнейшее обучение
+                                в&nbsp;Хекслете</p>
+                        </div>
+                        <div class="popup-content__item">
+                            <img class="popup-content__img" src="./vendor/image/online-chat_1.svg" alt="popup image">
+                            <p class="sub-title"><strong>Консультация с&nbsp;карьерным экспертом в&nbsp;IT.</strong>
+                                Прояснит вопросы будущего трудоустройства: от&nbsp;поиска первой работы до&nbsp;развития
+                                карьеры</p>
+                        </div>
+                        <div class="popup-content__item">
+                            <img class="popup-content__img" src="./vendor/image/Notes.svg" alt="popup image">
+                            <p class="sub-title"><strong>Возможность заморозить обучение на&nbsp;2&nbsp;месяца.</strong>
+                                Перерыв, если
+                                нужно будет восстановить силы
+                                и&nbsp;не&nbsp;учиться</p>
+                        </div>
+                        <p class="description">*Подарок определит сотрудник Хекслета после беседы. Мы&nbsp;уточним ваши
+                            намерения, поможем с&nbsp;выбором, а&nbsp;если поймем, что программирование&nbsp;&mdash;
+                            это не&nbsp;ваше, честно отговорим от&nbsp;обучения</p>
+                    </div>
+                    <div class="popup-inputs">
+                        <div class="mb-3 popup-inputs__item-of popup-inputs__item">
+                            <input type="text" class="form-control" placeholder="Имя" id="floatingTextarea" style="height: 47px; border: 0.5px solid #136EF6;
+                            border-radius: 5px; margin: 0; margin-bottom: 20px;"></input>
+                        </div>
+                        <form class="form-floating">
+                            <input type="email" class="form-control form-control-lg popup-inputs__item" style="height: 47px; border: 0.5px solid #136EF6;
+                            border-radius: 5px; margin: 0; margin-bottom: 20px;" id="floatingInputValue"
+                                placeholder="name@example.com" value="name@example.com">
+                            <label for="floatingInputValue">Электронная почта</label>
+                        </form>
+                        <form class="mb-3 popup-inputs__item-of popup-inputs__item">
+                            <input type="tel" class="form-control" id="floatingInputValueTel" style="height: 47px; border: 0.5px solid #136EF6;
+                            border-radius: 5px; margin: 0; margin-bottom: 20px;" placeholder="Номер телефона">
+                        </form>
+                        <select class="form-select popup-inputs__item" aria-label=".form-select-sm example" style="height: 47px; border: 0.5px solid #136EF6;
+                            border-radius: 5px; margin: 0; margin-bottom: 20px;">
+                            <option selected>Хочу на факультет</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary popup-inputs__button">Жду звонка</button>
+                        <p class="description-second">Даю согласие на&nbsp;обработку персональных данных, соглашаюсь
+                            с <a href="#" class="link description-second">&raquo;политикой конфиденциальности&raquo;</a>
+                            &nbsp;и <a href="#" class="link description-second"> &laquo;Условиями оказания
+                                услуг&raquo;</a></p>
+                    </div>
+                    <img class="popup__img" src="./vendor/image/pointer_arrow.svg" alt="pointer_arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

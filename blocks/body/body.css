@@ -1,0 +1,16 @@
+.body {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    color: #121212;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}

@@ -1,0 +1,6 @@
+.popup-content__item {
+    min-width: 260px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
